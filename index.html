@@ -4,167 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Namma Kudla – Explore Mangalore</title>
-
-  <style>
-    html, body {
-      height: 100%;
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: #fff;
-      background: #f4f4f4;
-      scroll-behavior: smooth;
-    }
-
-    /* NAVBAR */
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: #002b5c;
-      padding: 15px 20px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.4);
-    }
-
-    nav a {
-      color: white;
-      margin: 0 12px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-    nav a:hover {
-      color: #ffda79;
-    }
-
-    /* SEARCH BAR */
-    #searchBox {
-      padding: 10px;
-      width: 300px;
-      border-radius: 8px;
-      border: none;
-      outline: none;
-    }
-
-    /* HERO */
-    .hero {
-      height: 100vh;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      padding: 40px;
-      position: relative;
-    }
-
-    .hero::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(0,0,0,0.3);
-    }
-
-    .desc {
-      position: relative;
-      background: rgba(0,0,0,0.55);
-      padding: 25px;
-      border-radius: 10px;
-      max-width: 500px;
-      animation: fadeIn 1.2s ease-in-out;
-    }
-
-    @keyframes fadeIn {
-      from {opacity: 0; transform: translateY(20px);}
-      to {opacity: 1; transform: translateY(0);}
-    }
-
-    /* SECTIONS */
-    section {
-      padding: 40px;
-      color: black;
-    }
-
-    h2 {
-      margin-bottom: 20px;
-      color: #002b5c;
-      text-align: center;
-    }
-
-    /* CARDS */
-    .card {
-      background: #ffffff;
-      border-radius: 15px;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      transition: 0.3s;
-    }
-    .card:hover {
-      transform: scale(1.02);
-    }
-
-    .card img {
-      width: 100%;
-      height: 180px;
-      border-radius: 12px;
-      object-fit: cover;
-    }
-
-    /* FLEX ROW */
-    .flex-row {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    .flex-item {
-      flex: 1;
-      min-width: 280px;
-    }
-
-    /* VIDEO SECTION */
-    .video-box {
-      display: flex;
-      justify-content: center;
-    }
-
-    iframe {
-      border-radius: 15px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-    }
-
-    /* FOOTER */
-    footer {
-      background: #002b5c;
-      color: white;
-      padding: 20px;
-      text-align: center;
-      margin-top: 40px;
-    }
-
-    /* SCROLL TO TOP */
-    #topBtn {
-      position: fixed;
-      bottom: 25px;
-      right: 25px;
-      padding: 10px 15px;
-      background: #ffda79;
-      border: none;
-      border-radius: 50%;
-      cursor: pointer;
-      display: none;
-      font-weight: bold;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
-    }
-  </style>
+  <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-
   <!-- NAVBAR -->
   <nav>
     <div style="color:white; font-size: 22px; font-weight: bold;">Namma Kudla</div>
@@ -190,25 +33,21 @@
   <section>
     <h2>Top Destinations</h2>
     <div class="flex-row">
-
       <div class="card flex-item">
         <img src="https://i.pinimg.com/736x/e8/2f/d5/e82fd501f20e8fe040829af7f27a4ffb.jpg">
         <h3>Tannirbhavi Beach</h3>
         <p>Golden sand, peaceful sunsets, and calm Arabian Sea waves.</p>
       </div>
-
       <div class="card flex-item">
         <img src="https://mangaloretourism.in/images/tourist-places/st-aloysius-chapel-mangalore/st-aloysius-chapel-mangalore-tourism-opening-time-closing.jpg">
         <h3>St. Aloysius Chapel</h3>
         <p>Known for its splendid biblical fresco artwork.</p>
       </div>
-
       <div class="card flex-item">
         <img src="https://www.mangaloretempotraveller.in/uploads/image/tour-packages-places/best-place-to-visit-in-mangalore/pilikula-biological-park.jpg">
         <h3>Pilikula Nisargadhama</h3>
         <p>Nature park with zoo, heritage village, lake, and science center.</p>
       </div>
-
     </div>
   </section>
 
@@ -224,22 +63,18 @@
   <section>
     <h2>Latest Blogs</h2>
     <div class="flex-row">
-
       <div class="card flex-item">
-        <h3 src="https://www.zomato.com/mangalore">Top 10 Must-Try Foods in Mangalore</h3>
+        <h3>Top 10 Must-Try Foods in Mangalore</h3>
         <p>Kori rotti, goli baje, fish fry — explore the flavours of Kudla.</p>
       </div>
-
       <div class="card flex-item">
         <h3>Hidden Waterfalls Near Mangalore</h3>
         <p>Discover scenic hidden falls perfect for adventure lovers.</p>
       </div>
-
       <div class="card flex-item">
         <h3>Most Peaceful Temples to Visit</h3>
-        <p src="destination.html">From Kadri to Kudroli — a spiritual journey through Kudla.</p>
+        <p>From Kadri to Kudroli — a spiritual journey through Kudla.</p>
       </div>
-
     </div>
   </section>
 
@@ -261,47 +96,8 @@
   <!-- SCROLL TOP BUTTON -->
   <button id="topBtn" onclick="scrollToTop()">↑</button>
 
-  <!-- JS -->
-  <script>
-    // BACKGROUND SLIDER
-    var hero = document.getElementById("heroSection");
-
-    var images = [
-      "https://i.ytimg.com/vi/Zb1uRfRDFW0/maxresdefault.jpg",
-      "https://stylesatlife.com/wp-content/uploads/2018/02/Pilikula-Nisargadhama-Mangalore-Zoological-Park.jpg",
-        "https://1.bp.blogspot.com/-6ShVUrL0zdk/UUnxKRsuqmI/AAAAAAAAANQ/DWNBiGffDXg/s1600/Kateel-Temple-2.jpg",
-      "https://cdn.aroundmangalore.com/wp-content/uploads/2014/01/stmaryisland.png"
-    ];
-
-    let index = 0;
-    hero.style.backgroundImage = "url('" + images[index] + "')";
-
-    setInterval(function() {
-      index = (index + 1) % images.length;
-      hero.style.backgroundImage = "url('" + images[index] + "')";
-    }, 5000);
-
-    // NEWSLETTER
-    function subscribe(){
-      var email = document.getElementById("newsEmail").value;
-      if(email === ""){
-        alert("Please enter your email.");
-      } else {
-        alert("Subscribed Successfully!");
-      }
-    }
-
-    // SCROLL TO TOP
-    const topBtn = document.getElementById("topBtn");
-
-    window.addEventListener("scroll", () => {
-      topBtn.style.display = window.scrollY > 200 ? "block" : "none";
-    });
-
-    function scrollToTop() {
-      window.scrollTo({top: 0, behavior: "smooth"});
-    }
-  </script>
+  <!-- LINK EXTERNAL JS FILE -->
+  <script src="js.js"></script>
 
 </body>
 </html>

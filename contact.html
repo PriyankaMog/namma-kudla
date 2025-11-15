@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact – Namma Kudla</title>
+
+<style>
+  body{
+    margin:0;
+    font-family:Arial;
+    background:#f4f4f4;
+  }
+
+  nav{
+    display:flex;
+    justify-content:space-between;
+    padding:15px 20px;
+    background:#002b5c;
+    color:white;
+  }
+  nav a{
+    color:white;
+    margin:0 12px;
+    text-decoration:none;
+    font-weight:bold;
+  }
+  nav a:hover{
+    color:#ffda79;
+  }
+
+  h2{
+    text-align:center;
+    margin-top:30px;
+    color:#002b5c;
+  }
+
+  .contact-box{
+    background:white;
+    width:80%;
+    max-width:700px;
+    margin:30px auto;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  input, textarea{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    margin-bottom:12px;
+    background:#eeeeee;
+  }
+
+  button{
+    padding:12px 18px;
+    background:#002b5c;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+  }
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div style="font-size:22px; font-weight:bold;">Namma Kudla</div>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="blog.html">Blog</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="guides.html">Guides</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<h2>Contact Us</h2>
+
+<div class="contact-box">
+  <h3>Send us a message</h3>
+
+  <input type="text" id="name" placeholder="Your Name">
+  <input type="email" id="email" placeholder="Your Email">
+  <textarea id="message" rows="5" placeholder="Your Message"></textarea>
+
+  <button onclick="submitForm()">Send</button>
+</div>
+
+<script>
+function submitForm(){
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+
+  if(name==="" || email===""){
+    alert("Please fill all fields.");
+  } else {
+    alert("Message Sent Successfully!");
+  }
+}
+</script>
+
+</body>
+</html>
+
